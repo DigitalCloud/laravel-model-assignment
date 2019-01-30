@@ -1,0 +1,42 @@
+{
+    "name": "digitalcloud/laravel-model-assignment",
+    "description": "Laravel package allow you to assign eloquent models to assignee",
+    "keywords": [
+        "digitalcloud",
+        "laravel-assignment",
+        "laravel",
+        "eloquent",
+        "package",
+        "assignment",
+        "assignable"
+    ],
+    "homepage": "https://github.com/digitalcloud/laravel-model-assignment",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Motaz Marouf",
+            "email": "m.marouf@dce.sa",
+            "homepage": "https://dce.sa",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "digitalcloud/laravel-blameable": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "DigitalCloud\\ModelAssignment\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DigitalCloud\\ModelAssignment\\ModelAssignmentServiceProvider"
+            ]
+        }
+    }
+}
