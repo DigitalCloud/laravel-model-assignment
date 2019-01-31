@@ -12,8 +12,8 @@ class CreateAssignmentsTable extends Migration
             $table->increments('id');
             $table->unsignedBigInteger('user_id');
             $table->morphs('model');
-            $table->string('note');
-            $table->timestamp('due');
+            $table->string('note')->nullable();
+            $table->timestamp('due')->nullable();
             $table->blameable();
             $table->timestamps();
             $table->softDeletes();
